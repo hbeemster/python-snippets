@@ -1,2 +1,2 @@
 # python-snippets
-Not the first, 
+Not the first python-snippets out there, but certainly not the last!
