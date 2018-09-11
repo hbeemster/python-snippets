@@ -1,0 +1,21 @@
+---
+version: 1
+disable_existing_loggers: False
+formatters:
+    simple:
+        format: "%(asctime)s - %(module)s - %(funcName)s - lineno:%(lineno)d - %(levelname)s - %(message)s"
+
+handlers:
+
+    file_handler:
+        class: logging.handlers.RotatingFileHandler
+        level: DEBUG
+        formatter: simple
+        filename: cheese_shop.log
+        maxBytes: 10485760 # 10MB
+        backupCount: 20
+        encoding: utf8
+
+root:
+    level: DEBUG
+    handlers: [file_handler]
